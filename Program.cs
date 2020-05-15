@@ -35,30 +35,30 @@ namespace AntiDecompiler_Cleaner {
             }
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("[+] Finished !\n[+] File Saved at : {0}", Path);
-            Console.ReadLine();               
+            Console.ReadLine();
         }
         // Thanks to MindSystem and Tiex
         // This support most of ConfuserEx (Hide method in every method)
-        public static void CrashDnSpy (ModuleDefMD module) {
+        public static void CrashDnSpy(ModuleDefMD module) {
             foreach (var method in module.GetTypes().SelectMany(type => type.Methods)) {
                 if (!method.HasBody)
                     continue;
                 if (!method.Body.HasExceptionHandlers)
                     continue;
                 var instr = method.Body.ExceptionHandlers;
-                for (int i = 0; i < instr.Count ; i++) {
+                for (int i = 0; i < instr.Count; i++) {
                     var Start = instr[i].TryStart;
                     if (Start.OpCode != OpCodes.Calli || Start.Operand != null)
                         continue;
                     instr.Remove(instr[i]);
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("[+] Cleaning AntiDeompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
-                }             
+                }
             }
         }
         // This works for DotNetSafer
         public static void CrashDnSpy2(ModuleDefMD module) {
-            foreach(var method in module.GetTypes().SelectMany(type => type.Methods)) {
+            foreach (var method in module.GetTypes().SelectMany(type => type.Methods)) {
                 if (!method.HasBody)
                     continue;
                 if (!method.Body.HasInstructions)
@@ -75,30 +75,34 @@ namespace AntiDecompiler_Cleaner {
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("[+] Cleaning AntiDeompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
                     }
-                    catch (Exception ex){
+                    catch (Exception ex) {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("[+] Failed to clean method {0}\n     {1}", method.Name, ex.Message);
                     }
                 }
             }
         }
-        // Support for Box
+        // This is very buggy
+        // This may cause Unhandled Exeception 
         public static void CrashDnSpy3(ModuleDefMD module) {
-            foreach(var method in module.GetTypes().SelectMany(type => type.Methods)) {
+            foreach (var method in module.GetTypes().SelectMany(type => type.Methods)) {
                 if (!method.HasBody)
                     continue;
                 if (!method.Body.HasInstructions)
                     continue;
                 var instr = method.Body.Instructions;
-                for(int i = 0; i < instr.Count; i++) {
+                for (int i = 0; i < instr.Count; i++) {
                     try {
                         if (instr[i].OpCode != OpCodes.Box)
                             continue;
+                        if (instr[i + 1].OpCode != OpCodes.Stelem_Ref)
+                            continue;
                         instr[i].OpCode = OpCodes.Nop;
+                        instr[i + 1].OpCode = OpCodes.Nop;
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("[+] Cleaning AntiDeompiler method : 0x{0:x2} {1} ", method.MDToken.Raw, method.Name);
                     }
-                    catch (Exception ex){
+                    catch (Exception ex) {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("[+] Failed to clean method {0}\n     {1}", method.Name, ex.Message);
                     }
@@ -107,4 +111,3 @@ namespace AntiDecompiler_Cleaner {
         }
     }
 }
-// this still need to improves a lot since it may cause errors.
