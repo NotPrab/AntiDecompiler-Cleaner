@@ -1,0 +1,30 @@
+
+bin/Debug/netcoreapp3.1/AntiDecompiler Cleaner.deps.json
+bin/Debug/netcoreapp3.1/AntiDecompiler Cleaner.dll
+bin/Debug/netcoreapp3.1/AntiDecompiler Cleaner.exe
+bin/Debug/netcoreapp3.1/AntiDecompiler Cleaner.pdb
+bin/Debug/netcoreapp3.1/AntiDecompiler Cleaner.runtimeconfig.dev.json
+bin/Debug/netcoreapp3.1/AntiDecompiler Cleaner.runtimeconfig.json
+bin/Debug/netcoreapp3.1/dnlib.dll
+bin/Debug/netcoreapp3.1/dnlib.pdb
+bin/Debug/netcoreapp3.1/dnlib.xml
+obj/AntiDecompiler Cleaner.csproj.nuget.dgspec.json
+obj/AntiDecompiler Cleaner.csproj.nuget.g.props
+obj/AntiDecompiler Cleaner.csproj.nuget.g.targets
+obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.AssemblyInfo.cs
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.AssemblyInfoInputs.cache
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.assets.cache
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.csproj.CopyComplete
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.csproj.CoreCompileInputs.cache
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.csproj.FileListAbsolute.txt
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.csprojAssemblyReference.cache
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.dll
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.exe
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.genruntimeconfig.cache
+obj/Debug/netcoreapp3.1/AntiDecompiler Cleaner.pdb
+obj/project.assets.json
+obj/project.nuget.cache
+obj/project.packagespec.json
+.vs/AntiDecompiler Cleaner/v16/.suo
+.vs/AntiDecompiler Cleaner/DesignTimeBuild/.dtbcache.v2

@@ -12,4 +12,9 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Program.AntideCompilerPhase.cs" />
+    <Compile Remove="AntiDecompilerPhaseImpl.cs" />
+  </ItemGroup>
+
 </Project>
