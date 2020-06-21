@@ -42,5 +42,16 @@ namespace AntiDecompiler_Cleaner {
                     instr[i + 1].OpCode = OpCodes.Nop;
                 }
         }
+        
+        // This method solve
+        internal static void CallConstrained(MethodDef method) {
+            var instr = method.Body.Instructions;
+            for (var i = 0; i < instr.Count; i++) {
+                if (instr[i].IsBr() && instr[i + 1].OpCode == OpCodes.Constrained) {
+                    instr[i].OpCode = OpCodes.Nop;
+                    instr[i + 1].OpCode = OpCodes.Nop;
+                }
+            }
+        }
     }
 }

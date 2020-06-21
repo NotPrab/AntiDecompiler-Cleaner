@@ -28,3 +28,4 @@ obj/project.nuget.cache
 obj/project.packagespec.json
 .vs/AntiDecompiler Cleaner/v16/.suo
 .vs/AntiDecompiler Cleaner/DesignTimeBuild/.dtbcache.v2
+bin/Debug/netcoreapp3.1/AntiDecompiler Cleaner 1.2.rar

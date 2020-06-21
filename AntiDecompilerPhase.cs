@@ -6,7 +6,7 @@ namespace AntiDecompiler_Cleaner {
             var instr = method.Body.Instructions;
             for (var i = 0; i < instr.Count; i++)
                 // manually edit numbers, if file broken after used.
-                switch (AntiDecompilerUtils.Rnd.Next(0, 3)) {
+                switch (AntiDecompilerUtils.Rnd.Next(0, 4)) {
                     case 0:
                         AntiDecompilerUtils.CallsizeOfcalli(method); // thanks to cursedsheep
                         break;
@@ -15,6 +15,9 @@ namespace AntiDecompiler_Cleaner {
                         break;
                     case 2:
                         AntiDecompilerUtils.CallBox(method);
+                        break;
+                    case 3:
+                        AntiDecompilerUtils.CallConstrained(method);
                         break;
                 }
         }
