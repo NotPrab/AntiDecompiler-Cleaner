@@ -2,16 +2,13 @@
 using dnlib.DotNet;
 using dnlib.DotNet.Writer;
 
-/*
- * This is very unstable, sometimes you have to disable / modify something by yourself
- * I'll fix it later. If i come up with good ideas
- */
 namespace AntiDecompiler_Cleaner {
     internal static class Program {
         private static void Main(string[] args) {
             Console.Title = "Anti Decompiler Cleaner - Prab ";
             Console.ForegroundColor = ConsoleColor.Yellow;
             ModuleDefMD module = null;
+
             try {
                 module = ModuleDefMD.Load(args[0]);
                 Console.WriteLine("[?] File Loaded: {0}", module);
@@ -25,7 +22,7 @@ namespace AntiDecompiler_Cleaner {
                 Environment.Exit(0);
             }
 
-            foreach (var type in module.GetTypes()) {
+            foreach (var type in module.GetTypes())
                 foreach (var method in type.Methods)
                     if (method != null && method.HasBody && method.Body.HasInstructions)
                         try {
@@ -37,7 +34,6 @@ namespace AntiDecompiler_Cleaner {
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("[x] Failed to clean method {0}\n     {1}", method.Name, ex.Message);
                         }
-            }
 
             var savingPath = module.Kind == ModuleKind.Dll
                 ? args[0].Replace(".dll", "-noAnti.dll")

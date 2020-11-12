@@ -29,3 +29,67 @@ obj/project.packagespec.json
 .vs/AntiDecompiler Cleaner/v16/.suo
 .vs/AntiDecompiler Cleaner/DesignTimeBuild/.dtbcache.v2
 bin/Debug/netcoreapp3.1/AntiDecompiler Cleaner 1.2.rar
+*.xml
+.idea/.idea.AntiDecompiler Cleaner/.idea/codeStyles/codeStyleConfig.xml
+*.7z
+*.exe
+bin/Debug/net48/AntiDecompiler Cleaner.exe.config
+bin/Debug/net48/AntiDecompiler Cleaner.pdb
+bin/Debug/net48/dnlib.dll
+bin/Release/netcoreapp3.1/AntiDecompiler Cleaner.deps.json
+bin/Release/netcoreapp3.1/AntiDecompiler Cleaner.dll
+bin/Release/netcoreapp3.1/AntiDecompiler Cleaner.pdb
+bin/Release/netcoreapp3.1/AntiDecompiler Cleaner.runtimeconfig.dev.json
+bin/Release/netcoreapp3.1/AntiDecompiler Cleaner.runtimeconfig.json
+bin/Release/netcoreapp3.1/dnlib.dll
+bin/x86/net48/AntiDecompiler Cleaner.exe.config
+bin/x86/net48/AntiDecompiler Cleaner.pdb
+bin/x86/net48/dnlib.dll
+bin/x86/netcoreapp3.1/AntiDecompiler Cleaner.deps.json
+bin/x86/netcoreapp3.1/AntiDecompiler Cleaner.dll
+bin/x86/netcoreapp3.1/AntiDecompiler Cleaner.pdb
+bin/x86/netcoreapp3.1/AntiDecompiler Cleaner.runtimeconfig.dev.json
+bin/x86/netcoreapp3.1/AntiDecompiler Cleaner.runtimeconfig.json
+bin/x86/netcoreapp3.1/dnlib.dll
+obj/Debug/net48/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+obj/Debug/net48/AntiDecompiler Cleaner.AssemblyInfo.cs
+obj/Debug/net48/AntiDecompiler Cleaner.AssemblyInfoInputs.cache
+obj/Debug/net48/AntiDecompiler Cleaner.assets.cache
+obj/Debug/net48/AntiDecompiler Cleaner.csproj.CopyComplete
+obj/Debug/net48/AntiDecompiler Cleaner.csproj.CoreCompileInputs.cache
+obj/Debug/net48/AntiDecompiler Cleaner.csproj.FileListAbsolute.txt
+obj/Debug/net48/AntiDecompiler Cleaner.csprojAssemblyReference.cache
+obj/Debug/net48/AntiDecompiler Cleaner.exe.withSupportedRuntime.config
+obj/Debug/net48/AntiDecompiler Cleaner.pdb
+obj/Release/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.AssemblyInfo.cs
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.AssemblyInfoInputs.cache
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.assets.cache
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.csproj.CopyComplete
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.csproj.CoreCompileInputs.cache
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.csproj.FileListAbsolute.txt
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.dll
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.genruntimeconfig.cache
+obj/Release/netcoreapp3.1/AntiDecompiler Cleaner.pdb
+obj/rider.project.restore.info
+obj/x86/Debug/net48/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+obj/x86/Debug/net48/AntiDecompiler Cleaner.AssemblyInfo.cs
+obj/x86/Debug/net48/AntiDecompiler Cleaner.AssemblyInfoInputs.cache
+obj/x86/Debug/net48/AntiDecompiler Cleaner.assets.cache
+obj/x86/Debug/net48/AntiDecompiler Cleaner.csproj.CopyComplete
+obj/x86/Debug/net48/AntiDecompiler Cleaner.csproj.CoreCompileInputs.cache
+obj/x86/Debug/net48/AntiDecompiler Cleaner.csproj.FileListAbsolute.txt
+obj/x86/Debug/net48/AntiDecompiler Cleaner.exe.withSupportedRuntime.config
+obj/x86/Debug/net48/AntiDecompiler Cleaner.pdb
+obj/x86/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.AssemblyInfo.cs
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.AssemblyInfoInputs.cache
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.assets.cache
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.csproj.CopyComplete
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.csproj.CoreCompileInputs.cache
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.csproj.FileListAbsolute.txt
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.dll
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.genruntimeconfig.cache
+obj/x86/Debug/netcoreapp3.1/AntiDecompiler Cleaner.pdb
+.idea/.idea.AntiDecompiler Cleaner/.idea/codeStyles/codeStyleConfig.xml
+*.xml
